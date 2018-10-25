@@ -35,7 +35,7 @@ footer {
 	<div class="jumbotron">
 		<div class="container text-center">
 			<h1>
-				<b>DIGI ONLINE STORE</b>
+				<b>MOBILE STORE</b>
 			</h1>
 			<p>BEST OFFERS</p>
 		</div>
@@ -49,7 +49,6 @@ footer {
 					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">Logo</a>
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">

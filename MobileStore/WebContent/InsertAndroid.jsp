@@ -39,10 +39,15 @@ li a:hover {
 		<h1>Mobile Store</h1>
 	</div>
 	<ul>
-		<li><a href="HomePage.jsp">Home</a></li>
 
-		<li><a href="LogoutServlet">LogOut</a></li>
-
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	
+<ul class="nav navbar-nav navbar-right">
+			<li><a href="HomePage.jsp"><span
+					class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+		
+	</ul>
+	
 	</ul>
 
 	<center>

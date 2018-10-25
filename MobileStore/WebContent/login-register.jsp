@@ -29,27 +29,19 @@
 }
 </style>
 </head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body>
-	<!--Header-->
-	<header> <nav class="navbar navbar-inverse" role="navigation">
-	<div class="navbar-inner">
-		<a class="brand" href="home.jsp">OnlineKart</a> <a
-			class="btn btn-navbar" data-toggle="collapse"
-			data-target=".nav-collapse"> <span class="icon-bar"></span> <span
-			class="icon-bar"></span> <span class="icon-bar"></span>
-		</a>
+<div class="w3-container w3-teal">
+		<a class="brand" href="HomePage.jsp"><h1>Mobile Store</h1></a> 
 	</div>
-	</nav> </header>
+	
 
 	<!-- Section -->
 	<section>
 	<div class="container">
 		<div class="breadcrumbs">
-			<ul class="breadcrumb">
-				<c:url var="home" value="/home" />
-				<li class="active"><a href="home">Home</a> <span
-					class="divider">/</span></li>
-				<li class="active">Login</li>
 			</ul>
 		</div>
 		<div class="loginsection">

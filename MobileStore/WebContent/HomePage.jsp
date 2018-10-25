@@ -26,49 +26,57 @@ footer {
 
 <body>
 
-	<!NAVIGATION BAR CODE> <nav id="menu"
-		class="navbar navbar-default navbar-fixed-top on">
-	<div class="container-fluid">
-		<!-- Brand and toggle get grouped for better mobile display -->
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed"
-				data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-				<span class="sr-only">Toggle navigation</span> <span
-					class="icon-bar"></span> <span class="icon-bar"></span> <span
-					class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand page-scroll" href="#page-top">DIGI MOBILE
-				STORE</a>
-		</div>
 
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse"
-			id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav navbar-right">
-				<li class="active"><a href="login-register.jsp" class="page-scroll">Login</a></li>
-			</ul>
-			
-		</div>
-		<!-- /.navbar-collapse -->
-	</div>
-	<!-- /.container-fluid --> </nav> <header id="header">
-	<div class="intro">
 
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 intro-text">
-
-					<a href="#about" class="btn btn-custom btn-lg page-scroll">More
-						Info</a>
-				</div>
-			</div>
-		</div>
+	<div class="w3-container w3-teal">
+		<h1>Mobile Store</h1>
 	</div>
 
-	</header> <!NAVIGATION BAR CODE ENDS> <!CREATING CAROUSAL>
+	<style>
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: #111;
+}
+</style>
+</head>
+<body>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="login-register.jsp"><span
+					class="glyphicon glyphicon-log-in"></span> Login</a></li>
+		</ul>
+	</ul>
+
+
+
+
+
+	<br>
+	<br>
+	<!CREATING CAROUSAL>
 	<div class="container-fluid">
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
-		
+
 
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner">
@@ -112,8 +120,10 @@ footer {
 </style>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-sm-8">
-				<h2>About Company Page</h2>
+			<div class="col-sm-12">
+				<center>
+					<h2>About Company</h2>
+				</center>
 				<p>Digi Mobile Store is a leading destination for online mobile
 					shopping in India, offering some of the best prices and a
 					completely hassle-free experience with options of paying through
@@ -123,53 +133,43 @@ footer {
 					Salem,Tanjore,
 					Vellore,Hyderabad,Vijayawada,Tirupati,Kochi,Palakkad.</p>
 			</div>
-			<div class="col-sm-">
-				<span class="glyphicon glyphicon-signal logo"></span>
+
+		</div>
+	</div>
+
+
+
+	<br>
+	<br>
+	<br>
+
+	<div class="col-md-10 col-md-offset-1 contact-info">
+		<div class="col-md-4">
+			<h3>Address</h3>
+			<hr>
+			<div class="contact-item">
+				<p>4321 dlf,</p>
+				<p>Ramapuram, block 10</p>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<h3>Working Hours</h3>
+			<hr>
+			<div class="contact-item">
+				<p>Monday-Saturday: 09:00 - 20:00</p>
+				<p>Sunday: CLOSED</p>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<h3>Contact Info</h3>
+			<hr>
+			<div class="contact-item">
+				<p>Phone: +1800 6666 3333</p>
+				<p>Email: info@digimobilestore.com</p>
 			</div>
 		</div>
 	</div>
-		
-		
-		
-		<div id="contact" class="text-center">
-  <div class="container">
-    <div class="section-title text-center">
-      <h2>Contact Us</h2>
-    </div>
-    <div class="col-md-10 col-md-offset-1 contact-info">
-      <div class="col-md-4">
-        <h3>Address</h3>
-        <hr>
-        <div class="contact-item">
-          <p>4321 dlf,</p>
-          <p>Ramapuram, block 10 </p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <h3>Working Hours</h3>
-        <hr>
-        <div class="contact-item">
-          <p>Monday-Saturday: 09:00 - 20:00</p>
-          <p>Sunday: CLOSED</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <h3>Contact Info</h3>
-        <hr>
-        <div class="contact-item">
-          <p>Phone: +1800 6666 3333</p>
-          <p>Email: info@digimobilestore.com</p>
-        </div>
-      </div>
-    </div>
-     </div>
-    </div>
-    
-    
-		
-		
-		
-		
-		
+	</div>
+	</div>
 </body>
 </html>
