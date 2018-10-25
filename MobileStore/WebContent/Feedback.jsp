@@ -3,6 +3,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Feedback</title>
+</head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body>
@@ -38,15 +41,18 @@ li a:hover {
 </style>
 </head>
 <ul>
-<li><a class="active" href="WelcomeAdmin" name="aa">Home</a></li>
+<li><a class="active" href="HomePage.jsp" name="home">Home</a></li>
 </ul>
-			
-<h1 align="center">  Thank You For Your Order</h1>
-<div style="text-align: center">
-<h3> Success</h3>
- <h4> Keep Going</h4>
- <a href="product.jsp"><input type="button" value="Click to GO BACK TO MENU"></a><br><br>
- <a href="product.jsp"><input type="button" value="Feedback"></a>
-   </div>
-   </body>
-   </html>
+<br><br>
+<form action="FeedbackServlet" method="post">
+<div align= "center" >
+name: <input type="text" name = "name"/><br><br>
+email: <input type="email" name = "email"/><br><br>
+comment: <input type ="text" name="comment" required/><br><br>
+<input type="submit" value="submit">
+</div>
+</form>
+	
+
+</body>
+</html>
