@@ -1,18 +1,18 @@
 package com.shopping.beans;
 
 public class Products {
-	private int productid;
+	private int productId;
 	private int osId;
 	private String productName;
 	private String productCompany;
 	private int productPrice;
 	private int referenceNumber;
 	private int quantity;
-	public int getProductid() {
-		return productid;
+	public int getProductId() {
+		return productId;
 	}
-	public void setProductid(int productid) {
-		this.productid = productid;
+	public void setProductId(int productId) {
+		this.productId = productId;
 	}
 	public int getOsId() {
 		return osId;

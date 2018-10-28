@@ -84,14 +84,20 @@ form.example::after {
 					class="icon-bar"></span> <span class="icon-bar"></span> <span
 					class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand page-scroll" href="#page-top">DIGI MOBILE
+			<a class="navbar-brand page-scroll" href="">DIGI MOBILE
 				STORE</a>
 		</div>
+
+	
+		
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse"
 			id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav navbar-right">
+			<ul class="nav navbar-nav navbar-left">
+				
+				<li class="active"><a href="product.jsp" class="page-scroll">Menu</a></li>
+			
 				<li class="active"><a href="LogoutServlet" class="page-scroll">LogOut</a></li>
 			</ul>
 		</div>
@@ -114,7 +120,7 @@ form.example::after {
 
 	</head>
 	<!------ Include the above in your HEAD tag ----------> <br>
-	<form class="example" action="SearchServlet"
+<%-- 	<form class="example" action="SearchServlet"
 		style="margin: auto; max-width: 300px">
 		<center>
 			<input type="text" placeholder="Search by Company" name="search">
@@ -122,7 +128,7 @@ form.example::after {
 		<button type="submit">
 			<i class="fa fa-search"></i>
 		</button>
-	</form>
+	</form> --%>
 
 	<body>
 		<br>

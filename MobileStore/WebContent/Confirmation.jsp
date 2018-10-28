@@ -38,15 +38,25 @@ li a:hover {
 </style>
 </head>
 <ul>
-<li><a class="active" href="WelcomeAdmin" name="aa">Home</a></li>
+<li><a class="active" href="HomePage.jsp" name="aa">Home</a></li>
 </ul>
 			
-<h1 align="center">  Thank You For Your Order</h1>
+<h1 align="center">  Thank You For Your Order </h1>
 <div style="text-align: center">
-<h3> Success</h3>
- <h4> Keep Going</h4>
+<h3> </h3>
+<h4>Your order of <b> ${productName}</b>  of <b> ${productPrice} </b> Indian Rupees is confirmed.</h4>
+
+
+ <h6> You can expect your Order in 2 3 days. </h6>
+ 
+ <br><br>
+ 
+ 
  <a href="product.jsp"><input type="button" value="Click to GO BACK TO MENU"></a><br><br>
- <a href="product.jsp"><input type="button" value="Feedback"></a>
    </div>
+   
+   
+   
+   
    </body>
    </html>

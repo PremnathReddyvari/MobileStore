@@ -14,22 +14,22 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="C:/Users/harshavardhanreddy.r/Downloads/javax.servlet.jsp.jar">
+	<classpathentry kind="lib" path="C:/Users/aakash.s/Downloads/javax.servlet.jsp.jar/javax.servlet.jsp.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/harshavardhanreddy.r/Downloads/javax.servlet-3.0.jar">
+	<classpathentry kind="lib" path="C:/Users/aakash.s/Downloads/javax.servlet-3.0.jar/javax.servlet-3.0.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/harshavardhanreddy.r/Downloads/jstl-1.2.jar">
+	<classpathentry kind="lib" path="C:/Users/aakash.s/Downloads/jstl-1.2.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/harshavardhanreddy.r/Downloads/jtds-1.2.7.jar">
+	<classpathentry kind="lib" path="C:/Users/aakash.s/Downloads/jtds-1.2.7.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>

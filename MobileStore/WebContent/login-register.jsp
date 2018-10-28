@@ -52,7 +52,7 @@
 						<c:if test="${param.regStatus=='Fail'}">
 							<p class="warning">Registration Unsuccessful.</p>
 						</c:if>
-						<h5>CREATE YOUR ACCOUNT</h5>
+						<h5>NEW USER ? CREATE YOUR ACCOUNT</h5>
 						<form action="InsertServlet" method="post">
 							<div class="control-group">
 								<label class="control-label" for="name">Name</label>

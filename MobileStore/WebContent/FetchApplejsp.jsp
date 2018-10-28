@@ -13,7 +13,6 @@
 
 
 <style>
-
 .container.product_view .modal-dialog {
 	max-width: 800px;
 	width: 100%;
@@ -92,6 +91,8 @@ form.example::after {
 		<div class="collapse navbar-collapse"
 			id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right">
+				<li class="active"><a href="product.jsp" class="page-scroll">Menu</a></li>
+
 				<li class="active"><a href="LogoutServlet" class="page-scroll">LogOut</a></li>
 			</ul>
 		</div>
@@ -114,7 +115,7 @@ form.example::after {
 
 	</head>
 	<!------ Include the above in your HEAD tag ----------> <br>
-	<form class="example" action="SearchServlet"
+	<%-- <form class="example" action="SearchServlet"
 		style="margin: auto; max-width: 300px">
 		<center>
 			<input type="text" placeholder="Search by Company" name="search">
@@ -122,7 +123,7 @@ form.example::after {
 		<button type="submit">
 			<i class="fa fa-search"></i>
 		</button>
-	</form>
+	</form> --%>
 
 	<body>
 		<br>
@@ -147,15 +148,18 @@ form.example::after {
 								class="glyphicon glyphicon-star"></span> <span
 								class="glyphicon glyphicon-star"></span> <span
 								class="glyphicon glyphicon-star"></span> <span
-								class="glyphicon glyphicon-star"></span> 
+								class="glyphicon glyphicon-star"></span>
 						</p>
 					</div>
 					<div class="space-ten"></div>
 					<div class="btn-ground text-center">
-<!-- 						<form action="GetAndroidSession" method="post">
- -->							<!-- <button type="button" class="btn btn-primary">
- -->			<a href="GetAppleSession?referenceNumber=<c:out value="${lb.referenceNumber}"/>&productName=<c:out value="${lb.productName}"/> &productCompany=<c:out value="${lb.productCompany}"/> &productPrice=<c:out value="${lb.productPrice}"/>"><b><big><button>Buy Now</button></big></b></a> 
-  <i class="fa fa-shopping-cart"></i> 
+						<!-- 						<form action="GetAndroidSession" method="post">
+ -->
+						<!-- <button type="button" class="btn btn-primary">
+ -->
+						<a
+							href="GetAppleSession?referenceNumber=<c:out value="${lb.referenceNumber}"/>&productName=<c:out value="${lb.productName}"/> &productCompany=<c:out value="${lb.productCompany}"/> &productPrice=<c:out value="${lb.productPrice}"/>"><b><big><button>Buy
+										Now</button></big></b></a> <i class="fa fa-shopping-cart"></i>
 						<!-- 	</button>
 						</form> -->
 					</div>
