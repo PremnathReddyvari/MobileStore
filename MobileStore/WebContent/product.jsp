@@ -146,7 +146,7 @@ footer {
 									style="width: 50%" alt="Image">
 							</div>
 							<div class="panel-footer">
-								<a href="AndroidServlet"><b>Please Rate us</b></a>
+								<a href="Feedback.jsp"><b>Please Rate us</b></a>
 							</div>
 						</div>
 					</div>

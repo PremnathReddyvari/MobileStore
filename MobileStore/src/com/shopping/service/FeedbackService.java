@@ -2,21 +2,18 @@ package com.shopping.service;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import com.shopping.beans.Admin;
-import com.shopping.beans.Feedback;
 import com.shopping.db.DBConnection;
 
 public class FeedbackService
 {
-	public  void feedback(Feedback f) throws SQLException, ClassNotFoundException
+	public  void feedback(String comm,String email) throws SQLException, ClassNotFoundException
 	{
 		
 		DBConnection ca=new DBConnection();
 		Connection conn = ca.CONN();
-		PreparedStatement pstmt=null;
+		
 		if(conn==null)
 		{
 			System.out.println("not connected");
@@ -25,15 +22,14 @@ public class FeedbackService
 		{
 			
 			System.out.println("Getting the data");
-		String query="insert into Feedback values(?,?,?)";
+		String query="insert into Feedback values(?,?)";
 		PreparedStatement psmt= conn.prepareStatement(query);
 		
-		pstmt.setString(1,f.getName());
-		pstmt.setString(2, f.getEmail());
-		pstmt.setString(3, f.getComment());	
+		psmt.setString(1,email);
+		psmt.setString(2,comm);
 		
 		
-		int rec=pstmt.executeUpdate();
+		int rec=psmt.executeUpdate();
 		System.out.println(rec);
 		}
 		

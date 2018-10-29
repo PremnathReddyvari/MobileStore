@@ -7,10 +7,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.servlet.http.HttpSession;
-
 import com.shopping.beans.Order;
-import com.shopping.beans.User;
 import com.shopping.db.DBConnection;
 
 public class OrderService {
@@ -18,16 +15,31 @@ public class OrderService {
 	
 	
 	
-	public void addPerson(Order order,int referenceNumber) throws ClassNotFoundException, SQLException{
+	public boolean addPerson(Order order,int referenceNumber) throws ClassNotFoundException, SQLException{
 		DBConnection dbConnection= new DBConnection();
 		Connection con=dbConnection.CONN();
+		boolean flag=false;
 
 		if(con==null){
 
 			System.out.println("No Database Connected");
 		}
 		else{
+			
 			System.out.println("GETTING THE DATA");
+			System.out.println("insite update");
+			String query1="select quantity from products where productName=?";
+			PreparedStatement prepareStatement1 = con.prepareStatement(query1);
+			prepareStatement1.setString(1,order.getProductName());
+			ResultSet resultSet = prepareStatement1.executeQuery();
+			int quantity=0;
+			while(resultSet.next())
+			{
+			 quantity = resultSet.getInt(1);
+				
+			}
+			if(quantity>0){
+				
 			String query="INSERT INTO orderItem VALUES(?,?,?,?,?,?)";
 			PreparedStatement pstmt=con.prepareStatement(query);
 			pstmt.setString(1,order.getName());
@@ -38,12 +50,13 @@ public class OrderService {
 			pstmt.setString(6,order.getAddress());
 			
 			int rec=pstmt.executeUpdate();
-			
-	
 			System.out.println(rec);
+			flag=true;
+			}
+			
 
 		}
-
+    return flag;
 	}
 	public List<Order> getOrderByEmail(String email) throws ClassNotFoundException, SQLException {
 		List<Order> list=new ArrayList<Order>();
@@ -87,13 +100,13 @@ public class OrderService {
 		Connection con=dbConnection.CONN();
 
 		try {
-			System.out.println("insite update");
+			
 			String query="update products  SET quantity= quantity-1 where productName=?";
 
 			PreparedStatement prepareStatement = con.prepareStatement(query);
 			prepareStatement.setString(1,productName);
 			prepareStatement.executeUpdate();
-
+			
 	       }catch (Exception e) {
 			e.printStackTrace();
 		}

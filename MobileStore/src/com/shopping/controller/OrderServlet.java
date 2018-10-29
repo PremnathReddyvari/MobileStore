@@ -11,10 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.shopping.beans.Order;
-import com.shopping.beans.User;
-import com.shopping.service.CustomerService;
 import com.shopping.service.OrderService;
-import com.shopping.service.ProductService;
 
 /**
  * Servlet implementation class OrderServlet
@@ -63,33 +60,31 @@ public class OrderServlet extends HttpServlet {
 		order.setAddress(address);
 		System.out.println("doPost");
 		OrderService cs = new OrderService();
+		boolean decission=false;
 		
-		try {
-			System.out.println("ADDING");
-			cs.addPerson(order,referenceNumber);
-		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
 
 	
 		try {
+			 decission = cs.addPerson(order,referenceNumber);
+			 if(decission==true){
 			System.out.println("product decreased");
 			System.out.println(order.getProductName());
 		    cs.updateProducts(order.getProductName());
+		   
+		    response.sendRedirect("Confirmation.jsp");
+			 }
+			 
+			 else{
+				 
+				 response.sendRedirect("product.jsp");
+			 }
 		    
 		} catch (ClassNotFoundException | SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
-		response.sendRedirect("Confirmation.jsp");
-
-
-		doGet(request, response);
+		
 	}
-
 }

@@ -8,8 +8,8 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
-import com.shopping.beans.Feedback;
 import com.shopping.service.FeedbackService;
 
 /**
@@ -40,22 +40,21 @@ public class FeedbackServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		doGet(request, response);
-		 String name1= request.getParameter("name");
-		 String email1= request.getParameter("email");
-		String comment1= request.getParameter("comment");
-	  Feedback f= new Feedback();
-		f.setName(name1);
-		f.setEmail(email1);
-		f.setComment(comment1);
-		FeedbackService fb=new FeedbackService();
+	
+		String comment= request.getParameter("comment");
+		HttpSession session = request.getSession();
+		String email = (String)session.getAttribute("email");
+		System.out.println(comment+"   "+email);
+		
+		FeedbackService feedbackService = new FeedbackService();
 		try {
-			fb.feedback(f);
+			feedbackService.feedback(comment,email);
 		} catch (ClassNotFoundException | SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
+	 
 	}
 
 }

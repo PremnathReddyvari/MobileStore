@@ -46,8 +46,6 @@ li a:hover {
 <br><br>
 <form action="FeedbackServlet" method="post">
 <div align= "center" >
-name: <input type="text" name = "name"/><br><br>
-email: <input type="email" name = "email"/><br><br>
 comment: <input type ="text" name="comment" required/><br><br>
 <input type="submit" value="submit">
 </div>
