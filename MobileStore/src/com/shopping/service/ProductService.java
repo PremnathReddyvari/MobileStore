@@ -92,14 +92,14 @@ public class ProductService {
 					while (rs.next()) {
 						p=new Products();
 						
-						p.setProductid(rs.getInt(1));
+						p.setProductId(rs.getInt(1));
 						p.setOsId(rs.getInt(2));
 						p.setProductName(rs.getString(3));
 						p.setProductCompany(rs.getString(4));
 						p.setProductPrice(rs.getInt(5));
 						p.setReferenceNumber(rs.getInt(6));
 						p.setQuantity(rs.getInt(7));
-						System.out.println(p.getProductCompany()+" "+p.getOsId()+" "+p.getProductid());
+						System.out.println(p.getProductCompany()+" "+p.getOsId()+" "+p.getProductId());
 						androidProducts.add(p);
 					}
 					rs.close();
@@ -302,6 +302,43 @@ public class ProductService {
 
 		return android;
 	}
+	
+	
+	public List<Products> getAllProducts() throws SQLException, ClassNotFoundException {
+		DBConnection dbConnection= new DBConnection();
+		Connection con=dbConnection.CONN();
+		List<Products> products = new ArrayList<Products>();
+		
+		if(con==null){
+
+			System.out.println("No Database Connected");
+		}
+		else{
+			String query = "select * from products";
+			
+				PreparedStatement pstmt=con.prepareStatement(query);
+				ResultSet set=pstmt.executeQuery();
+
+				while (set.next()) {
+					Products p = new Products();
+					p.setProductId(set.getInt(1));
+					p.setOsId(set.getInt(2));
+					p.setProductName(set.getString(3));
+					p.setProductCompany(set.getString(4));
+					p.setProductPrice(set.getInt(5));
+					p.setReferenceNumber(set.getInt(6));
+					p.setQuantity(set.getInt(7));
+					products.add(p);
+				}
+				pstmt.close();
+				set.close();
+				
+	
+		}	
+		return products;
+			
+		}
+
 
 
 

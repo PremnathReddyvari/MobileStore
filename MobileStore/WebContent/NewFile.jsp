@@ -42,16 +42,16 @@ li a:hover {
 <body>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 	<ul>
-		<li><a class="active" href="WelcomeAdmin" name="aa">Home</a></li>
-		<li><a href="listadminbook" name="ll">List Of Books</a></li>
-		<li><a href="vendorlogin" name="vn">Log Out</a></li>
+		<li><a class="active" href="product" name="aa">Home</a></li>
+		
+		<li><a href="LogoutServlet" name="vn">Log Out</a></li>
 	</ul>
 
 
 
-	<p align="center" style="font-size: 50px;">Update</p>
+	<p align="center" style="font-size: 50px;">Order Confirmation</p>
 	<center>
-		<title>Update Record</title>
+		<title>Order Confirmation</title>
 		<form action="OrderServlet" method="POST">
 
 <p style="font-size:20px;">Welcome your referenceNumber is : ${referenceNumber} </p>

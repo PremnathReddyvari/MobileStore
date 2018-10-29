@@ -44,6 +44,8 @@ li a:hover {
 <ul>
   <li><a href="userlogin">Home</a></li>
   <li><a href="InsertAndroid.jsp">Add Phones</a></li>
+   <li><a href="ViewProduct">List Of Products</a></li>
+  
  
   <li><a href="LogoutServlet">LogOut</a></li>
   

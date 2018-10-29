@@ -60,7 +60,7 @@ footer {
 			</div>
 		</div>
 	</nav>
-	<p style="font-size:15px;">Welcome ${user.name}</p>
+	<p style="font-size:20px;">Hey ${user.name}</p>
 
 	
 	<div class="container">
@@ -99,7 +99,7 @@ footer {
 							alt="Image">
 					</div>
 					<div class="panel-footer">
-						<a href="SymbianServlet"><b> Symbian</b></a>
+						<a href="AndroidServlet?osId=3"><b>Symbian</b></a>
 					</div>
 				</div>
 			</div>

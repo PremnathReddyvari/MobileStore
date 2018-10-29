@@ -60,7 +60,7 @@ li a:hover {
 <body>
 <div align= "center" >
 <h3>The mobile has successfully added to store </h3>
-<a href="InsertAndroid.jsp.jsp"><button>Add More</button></a></li>
+<a href="Menu.jsp"><button>Move Back to the Menu Page</button></a></li>
 </div>
 </body>
 </html>
